@@ -1,0 +1,26 @@
+1. <div> — Division Element
+Purpose: Acts as a container for other HTML elements, useful for grouping content and applying styles or layouts.
+
+Use Case: Often used with CSS for layout design, such as creating columns or sections.
+
+2. <h1> to <h6> — Heading Tags
+Purpose: Define headings, from most important (<h1>) to least important (<h6>).
+
+Use Case: Structure content hierarchically for both users and search engines (SEO).
+
+3. <p> — Paragraph Tag
+Purpose: Represents a block of text or paragraph.
+
+Use Case: Used to format textual content into readable paragraphs.
+
+4. <a> — Anchor Tag
+Purpose: Creates hyperlinks to other pages or sections within the same page.
+
+Use Case: Navigation, linking to external resources or files.
+
+5. <img> — Image Tag
+Purpose: Embeds images into a webpage.
+
+Use Case: Enhances visual content; supports alt text for accessibility and SEO.
+
+

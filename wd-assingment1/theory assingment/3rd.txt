@@ -1,0 +1,44 @@
+Block-Level Elements
+ Definition:
+A block-level element takes up the full width of its parent container, starting on a new line. It creates a "block" of content.
+
+-> Always starts on a new line.
+
+-> Expands the full width available (by default).
+
+-> Can contain other block-level and inline elements.
+
+ Example:
+
+<div>,<p>,<h1> to <h6>,<section>,
+
+<article>,<ul>, <ol>, <li>,<form>, <table>
+
+
+
+
+
+
+Inline Elements
+ Definition:
+An inline element does not start on a new line and only takes up as much width as necessary. It flows within a block of text.
+
+-> Stays on the same line as other content.
+
+-> Only consumes as much horizontal space as its content requires.
+
+-> Cannot contain block-level elements.
+
+
+ Example: 
+
+<span>
+
+<a>
+
+<strong>, <em>, <b>, <i>
+
+<img>
+
+<input>
+

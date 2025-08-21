@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header, footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 10px;
+      gap: 10px;
+    }
+
+    .section {
+      background: #2196f3;
+      color: white;
+      padding: 20px;
+      border-radius: 6px;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .section {
+        flex: 1 1 calc(50% - 20px);
+      }
+
+      header, footer {
+        font-size: 22px;
+        padding: 30px;
+      }
+
+      .section {
+        font-size: 18px;
+        padding: 25px;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      header, footer {
+        font-size: 24px;
+        padding: 40px;
+      }
+
+      .section {
+        font-size: 20px;
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Responsive Layout</h1>
+    </header>
+
+    <div class="content">
+      <div class="section">Content Section 1</div>
+      <div class="section">Content Section 2</div>
+      <div class="section">Content Section 3</div>
+    </div>
+
+    <footer>
+      <p>Footer Section</p>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo-classes & Pseudo-elements</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 30px;
+    }
+
+    h2::before {
+      content: "✦ ";
+      color: #ff9800;
+      font-size: 20px;
+    }
+
+    p::first-line {
+      font-weight: bold;
+      color: #007bff;
+      font-size: 18px;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+      font-size: 18px;
+      margin-right: 15px;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #007bff;
+    }
+
+    a:active {
+      color: red;
+    }
+
+    a:visited {
+      color: purple;
+    }
+  </style>
+</head>
+<body>
+  <h2>Useful Links</h2>
+  <a href="https://www.google.com" target="_blank">Google</a>
+  <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+  <a href="https://www.github.com" target="_blank">GitHub</a>
+
+  <h2>Sample Paragraph</h2>
+  <p>
+    This is a sample paragraph demonstrating the ::first-line pseudo-element. 
+    Only the first line will have special styling, making it stand out from 
+    the rest of the text. This technique is useful for highlighting the opening 
+    sentence in articles or essays.
+  </p>
+</body>
+</html>

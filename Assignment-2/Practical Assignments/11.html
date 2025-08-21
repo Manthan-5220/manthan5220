@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo-classes and Pseudo-elements</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      padding: 30px;
+    }
+
+    h2::before {
+      content: "✦ ";
+      color: #ff9800;
+      font-size: 20px;
+    }
+
+    p::first-line {
+      font-weight: bold;
+      color: #007bff;
+      font-size: 18px;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+      font-size: 18px;
+      margin-right: 15px;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #007bff;
+    }
+
+    a:active {
+      color: #ff0000;
+    }
+
+    a:visited {
+      color: #800080;
+    }
+  </style>
+</head>
+<body>
+  <h2>Useful Links</h2>
+  <a href="https://www.google.com" target="_blank">Google</a>
+  <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+  <a href="https://www.github.com" target="_blank">GitHub</a>
+
+  <h2>Sample Paragraph</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, quae architecto nobis, natus harum esse vero magnam tempora cupiditate illum sequi recusandae quis suscipit voluptates nisi aliquid repellat odio doloribus!
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic enim dolore laboriosam iste perferendis perspiciatis, cumque, facere id non laborum doloremque consequuntur delectus dolor, repudiandae quia sunt minus consectetur veritatis!
+  </p>
+</body>
+</html>

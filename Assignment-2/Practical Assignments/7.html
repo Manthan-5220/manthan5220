@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Gallery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 200px);
+      gap: 15px;
+      width: 80%;
+      max-width: 900px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 200px);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <img src="https://via.placeholder.com/300x200" alt="Image 1">
+    <img src="https://via.placeholder.com/300x200" alt="Image 2">
+    <img src="https://via.placeholder.com/300x200" alt="Image 3">
+    <img src="https://via.placeholder.com/300x200" alt="Image 4">
+    <img src="https://via.placeholder.com/300x200" alt="Image 5">
+    <img src="https://via.placeholder.com/300x200" alt="Image 6">
+  </div>
+</body>
+</html>

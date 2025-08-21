@@ -1,0 +1,29 @@
+1. Difference Between Inline, Internal, and External CSS
+Inline CSS: This type of CSS is applied directly within an HTML element using the style attribute. It affects only that specific element. For example:
+
+html
+
+Run
+Copy code
+<h1 style="color: blue;">Hello World</h1>
+Inline CSS is useful for quick styling but is not recommended for larger projects due to maintainability issues.
+
+Internal CSS: This CSS is defined within a <style> tag in the <head> section of an HTML document. It applies to all elements within that document. For example:
+
+html
+7 lines
+Click to expand
+<head>
+<style>
+...
+Internal CSS is useful for styling a single document without affecting others.
+
+External CSS: This involves linking to a separate CSS file using the <link> tag in the <head> section of an HTML document. This method allows multiple HTML documents to share the same CSS file. For example:
+
+html
+3 lines
+Click to expand
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css">
+...
+External CSS is the most efficient way to manage styles across multiple pages.

@@ -1,0 +1,14 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+
+}
+
+.clac
+{
+    width: 80%;
+    height: auto;
+}

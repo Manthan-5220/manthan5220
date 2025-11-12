@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            box-sizing: border-box;
+        }
+        #slider {
+            width: 50%;
+            height: 400px;
+            padding-left: 25%;
+            padding-top: 10%;
+        }
+        #slide img {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://malsup.github.io/min/jquery.cycle2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#slide").cycle({
+                fx: "zoom",
+                duration: 4000
+            });
+        })
+    </script>
+</head>
+<body>
+    <div id="slider">
+        <div id="slide">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4BFku8l4kCGi8ULk1c74vWrMu4g0i4wGpqA&s" />
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJODN-Sb5bSlDQdHP8FH586fbO4k19pSoeWw&s" />
+            <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/565628550.jpg?k=ac4a4a1a0ef148f8d8e4ef6a71676d45f18af71f4a25976e76093851e413313e&o=" />
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/28/78/82/d0/ocean-view-house.jpg?w=900&h=500&s=1" />
+        </div>
+    </div>
+</body>
+</html>
